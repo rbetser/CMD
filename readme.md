@@ -53,11 +53,17 @@ Training parameters (optimizer type, scheduler type, number of epochs, learning 
 get_model() in base_utils.py in the utils directory. These parameters follow the parameters used in the results section in the paper.
 
 # **Results**
-Results on different classification models, on CIFAR10:  
+- Results on different classification models, on CIFAR10:  
 <img src="images/result_table.png" alt=""/>  
 
-ResNet18 on CIFAR10 using different regularization methods:  
+- ResNet18 on CIFAR10 using different regularization methods:  
 <img src="images/results_table_2.png" alt=""/>
+
+- Image synthesis results using StarGAN_v2 trained on Celeb-A-HQ dataset:  
+<img src="images/face_syn_results.png" alt=""/>  
+
+- Visualization examples using CMD:
+  <img src="images/vis_results.png" alt=""/>  
 
 
 # **Citation**
