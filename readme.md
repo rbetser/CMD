@@ -1,5 +1,5 @@
 This repository is the official implementation of:
-'Enhancing Neural Training via a Correlated Dynamics Model' (ICLR 2024)
+['Enhancing Neural Training via a Correlated Dynamics Model' (ICLR 2024)](https://iclr.cc/virtual/2024/poster/18304)
 
 
 Requirements:
