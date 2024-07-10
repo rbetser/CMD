@@ -3,7 +3,7 @@
 This repository is the official implementation of:
 ['Enhancing Neural Training via a Correlated Dynamics Model' (ICLR 2024)](https://iclr.cc/virtual/2024/poster/18304)  
 CMD is a correlation-based training dynamics modeling method which divides the full NN trainable parameters to several clusters. Our method leverages correlations in weight updates to enhance overall model performance in any scenario and convergence speed in the federated learning setting. We demonstrate the effectiveness of CMD across various neural architectures, tasks and datasets and compare it with other regularization and dimensionality reduction methods.
-
+![](images/cmd_vs_dmd.png)![](images/corr_mat_example.png)
 
 
 ## **Requirements:**
