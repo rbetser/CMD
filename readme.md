@@ -2,7 +2,7 @@ This repository is the official implementation of:
 ['Enhancing Neural Training via a Correlated Dynamics Model' (ICLR 2024)](https://iclr.cc/virtual/2024/poster/18304)
 
 
-<h1>**Requirements:**</h1>
+**Requirements:**
 - Python 3.8.8
 - pytorch 1.13.1
 - CUDA Version 11.6.112
@@ -25,14 +25,20 @@ Default example details:
  The number of modes and sampled weights are hard-coded per model type, warm-up epochs are given as an argument.
  
 Add P-BFGS to the compared methods:
->> python train_cmd.py --p_bfgs True
+'''sh
+python train_cmd.py --p_bfgs True
+'''
 Default is P-BFGS with 80 warm-up epochs and 40 dimensions.
 
 Remove one of the 4 methods (example on Post-hoc CMD):
->> python train_cmd.py --cmd_PostHoc ''
+'''sh
+python train_cmd.py --cmd_PostHoc ''
+'''
 
 Example of comparing only Online CMD to P-BFGS:
->> python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
+'''sh
+python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
+'''
 
 Embedded CMD is also available, with an argument similar to the P-BFGS argument. Note that the embedding algorithm hyperparameters are given as arguments, the default values are suited to ResNet18.
 
