@@ -16,7 +16,7 @@ Usage:
 The default example is executed as followed:
 ```sh
 python train_cmd.py
-```sh
+```
 
 Default example details:
  - ResNet18 on CIFAR10 (SGD optimizer, learning rate - 0.05, momentum - 0.9, 150 epochs, no scheduler)
