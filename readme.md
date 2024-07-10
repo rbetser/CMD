@@ -14,7 +14,8 @@ Additional python library:
 Usage:
 
 The default example is executed as followed:
->> python train_cmd.py
+```sh
+python train_cmd.py
 
 Default example details:
  - ResNet18 on CIFAR10 (SGD optimizer, learning rate - 0.05, momentum - 0.9, 150 epochs, no scheduler)
