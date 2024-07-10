@@ -54,6 +54,14 @@ get_model() in base_utils.py in the utils directory. These parameters follow the
 
 # **Results**
 
+| Column 1 Header | Column 2 Header | Column 3 Header |
+|-----------------|-----------------|-----------------|
+| Row 1, Col 1    | Row 1, Col 2    | Row 1, Col 3    |
+| Row 2, Col 1    | Row 2, Col 2    | Row 2, Col 3    |
+| Row 3, Col 1    | Row 3, Col 2    | Row 3, Col 3    |
+
+
+
 # **Citation**
 If you find our work useful in your research please consider citing our publication:
 
