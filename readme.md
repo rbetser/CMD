@@ -13,7 +13,7 @@ Additional python library:
 
 **Usage**:
 
-The default example is executed as followed:
+1) The default example is executed as followed:
 ```sh
 python train_cmd.py
 ```
@@ -24,25 +24,25 @@ Default example details:
  - CMD is performed with 10 modes (M), 1000 sampled weights (K) and 20 warm-up epochs (F).
  The number of modes and sampled weights are hard-coded per model type, warm-up epochs are given as an argument.
  
-Add P-BFGS to the compared methods:
+2) Add P-BFGS to the compared methods:
 ```sh
 python train_cmd.py --p_bfgs True
 ```
 Default is P-BFGS with 80 warm-up epochs and 40 dimensions.
 
-Remove one of the 4 methods (example on Post-hoc CMD):
+3) Remove one of the 4 methods (example on Post-hoc CMD):
 ```sh
 python train_cmd.py --cmd_PostHoc ''
 ```
 
-Example of comparing only Online CMD to P-BFGS:
+4) Example of comparing only Online CMD to P-BFGS:
 ```sh
 python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
 ```
 
 Embedded CMD is also available, with an argument similar to the P-BFGS argument. Note that the embedding algorithm hyperparameters are given as arguments, the default values are suited to ResNet18.
 
-All the arguments are listed in the bottom of the main file (train_cmd.py) with explanations.
+All the arguments are listed in the bottom of the main file (train_cmd.py) with explanations.  
 Available model types - Resnet18, PreRes164, WideRes28-10, LeNet-5, GoogleNet, ViT-b-16
 Training parameters (optimizer type, scheduler type, number of epochs, learning rate, momentum, number of CMD modes, etc.) are different per model type.
 Therefore, these parameters are hard coded and not coded as arguments. To access them see the function - 
