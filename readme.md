@@ -1,8 +1,10 @@
 This repository is the official implementation of:
-['Enhancing Neural Training via a Correlated Dynamics Model' (ICLR 2024)](https://iclr.cc/virtual/2024/poster/18304)
+['Enhancing Neural Training via a Correlated Dynamics Model' (ICLR 2024)](https://iclr.cc/virtual/2024/poster/18304)  
+CMD is a correlation-based training dynamics modeling method which divides the full NN trainable parameters to several clusters. Our method leverages correlations in weight updates to enhance overall model performance in any scenario and convergence speed in the federated learning setting. We demonstrate the effectiveness of CMD across various neural architectures, tasks and datasets and compare it with other regularization and dimensionality reduction methods.
 
 
-#**Requirements:**
+
+## **Requirements:**
 - Python 3.8.8
 - pytorch 1.13.1
 - CUDA Version 11.6.112
@@ -11,7 +13,7 @@ Additional python library:
 - ordered_set
 
 
-#**Usage**:
+# **Usage**:
 
 1) The default example is executed as followed:
 ```sh
