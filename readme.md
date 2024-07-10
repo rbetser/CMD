@@ -54,10 +54,10 @@ get_model() in base_utils.py in the utils directory. These parameters follow the
 
 # **Results**
 Results on different classification models, on CIFAR10:  
-<img src="images/result_table.png" alt="" height="250"/>  
+<img src="images/result_table.png" alt=""/>  
 
 ResNet18 on CIFAR10 using different regularization methods:  
-<img src="images/results_table_2.png" alt="" height="250"/>
+<img src="images/results_table_2.png" alt=""/>
 
 
 # **Citation**
