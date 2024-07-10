@@ -3,12 +3,12 @@ This repository is the official implementation of:
 
 
 Requirements:
-Python 3.8.8
-pytorch 1.13.1
-CUDA Version 11.6.112
+- Python 3.8.8
+- pytorch 1.13.1
+- CUDA Version 11.6.112
 
 Additional python library:
-ordered_set
+- ordered_set
 
 
 Usage:
