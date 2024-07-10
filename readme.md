@@ -2,7 +2,7 @@ This repository is the official implementation of:
 ['Enhancing Neural Training via a Correlated Dynamics Model' (ICLR 2024)](https://iclr.cc/virtual/2024/poster/18304)
 
 
-Requirements:
+<h1>**Requirements:**</h1>
 - Python 3.8.8
 - pytorch 1.13.1
 - CUDA Version 11.6.112
@@ -11,7 +11,7 @@ Additional python library:
 - ordered_set
 
 
-Usage:
+**Usage**:
 
 The default example is executed as followed:
 ```sh
