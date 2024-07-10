@@ -43,7 +43,7 @@ python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
 Embedded CMD is also available, with an argument similar to the P-BFGS argument. Note that the embedding algorithm hyperparameters are given as arguments, the default values are suited to ResNet18.
 
 All the arguments are listed in the bottom of the main file (train_cmd.py) with explanations.  
-Available model types - Resnet18, PreRes164, WideRes28-10, LeNet-5, GoogleNet, ViT-b-16
-Training parameters (optimizer type, scheduler type, number of epochs, learning rate, momentum, number of CMD modes, etc.) are different per model type.
-Therefore, these parameters are hard coded and not coded as arguments. To access them see the function - 
+Available model types - Resnet18, PreRes164, WideRes28-10, LeNet-5, GoogleNet, ViT-b-16.  
+Training parameters (optimizer type, scheduler type, number of epochs, learning rate, momentum, number of CMD modes, etc.) are hard coded and different per model type.  
+To access these parameters see the function -  
 get_model() in base_utils.py in the utils directory. These parameters follow the parameters used in the results section in the paper.
