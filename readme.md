@@ -25,20 +25,20 @@ Default example details:
  The number of modes and sampled weights are hard-coded per model type, warm-up epochs are given as an argument.
  
 Add P-BFGS to the compared methods:
-'''sh
+```sh
 python train_cmd.py --p_bfgs True
-'''
+```
 Default is P-BFGS with 80 warm-up epochs and 40 dimensions.
 
 Remove one of the 4 methods (example on Post-hoc CMD):
-'''sh
+```sh
 python train_cmd.py --cmd_PostHoc ''
-'''
+```
 
 Example of comparing only Online CMD to P-BFGS:
-'''sh
+```sh
 python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
-'''
+```
 
 Embedded CMD is also available, with an argument similar to the P-BFGS argument. Note that the embedding algorithm hyperparameters are given as arguments, the default values are suited to ResNet18.
 
