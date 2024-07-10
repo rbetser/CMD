@@ -53,7 +53,7 @@ Training parameters (optimizer type, scheduler type, number of epochs, learning 
 get_model() in base_utils.py in the utils directory. These parameters follow the parameters used in the results section in the paper.
 
 # **Results**
-- Results on different classification models, on CIFAR10:  
+- Results on different classification models, trained and tested on CIFAR10:  
 <img src="images/result_table.png" alt=""/>  
 
 - ResNet18 on CIFAR10 using different regularization methods:  
