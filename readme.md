@@ -2,7 +2,7 @@ This repository is the official implementation of:
 ['Enhancing Neural Training via a Correlated Dynamics Model' (ICLR 2024)](https://iclr.cc/virtual/2024/poster/18304)
 
 
-**Requirements:**
+#**Requirements:**
 - Python 3.8.8
 - pytorch 1.13.1
 - CUDA Version 11.6.112
@@ -11,7 +11,7 @@ Additional python library:
 - ordered_set
 
 
-**Usage**:
+#**Usage**:
 
 1) The default example is executed as followed:
 ```sh
@@ -46,3 +46,19 @@ All the arguments are listed in the bottom of the main file (train_cmd.py) with 
 Available model types - Resnet18, PreRes164, WideRes28-10, LeNet-5, GoogleNet, ViT-b-16.  
 Training parameters (optimizer type, scheduler type, number of epochs, learning rate, momentum, number of CMD modes, etc.) are hard coded and different per model type. To access these parameters see the function -  
 get_model() in base_utils.py in the utils directory. These parameters follow the parameters used in the results section in the paper.
+
+# **Results**
+
+# **Citation**
+If you find our work useful in your research please consider citing our publication:
+
+```sh
+@inproceedings{
+brokman2024enhancing,
+title={Enhancing Neural Training via a Correlated Dynamics Model},
+author={Jonathan Brokman and Roy Betser and Rotem Turjeman and Tom Berkov and Ido Cohen and Guy Gilboa},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=c9xsaASm9L}
+}
+```
