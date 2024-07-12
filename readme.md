@@ -26,7 +26,7 @@ python train_cmd.py
 
 Default example details:
  - ResNet18 on CIFAR10 (SGD optimizer, learning rate - 0.05, momentum - 0.9, 150 epochs, no scheduler)
- - 3 methods are compared - SGD, Post-hoc CMD, Online CMD
+ - 3 training versions are compared - SGD, Post-hoc CMD, Online CMD. See paper for details on their roles and differences.
  - CMD is performed with 10 modes (M), 1000 sampled weights (K) and 20 warm-up epochs (F).
  The number of modes and sampled weights are hard-coded per model type, warm-up epochs are given as an argument.
  
@@ -46,12 +46,9 @@ python train_cmd.py --cmd_PostHoc ''
 python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
 ```
 
-Embedded CMD is also available, with an argument similar to the P-BFGS argument. Note that the embedding algorithm hyperparameters are given as arguments, the default values are suited to ResNet18.
+Training parameters (optimizer type, scheduler type, number of epochs, learning rate, momentum, number of CMD modes, etc.) are hard coded and different per model type. To access these parameters see the function get_model() in base_utils.py in the utils directory. These parameters follow the parameters used in the results section in the paper.
+Additional options and details are avialable within the code (bottom of the main file - train_cmd.py).
 
-All the arguments are listed in the bottom of the main file (train_cmd.py) with explanations.  
-Available model types - Resnet18, PreRes164, WideRes28-10, LeNet-5, GoogleNet, ViT-b-16.  
-Training parameters (optimizer type, scheduler type, number of epochs, learning rate, momentum, number of CMD modes, etc.) are hard coded and different per model type. To access these parameters see the function -  
-get_model() in base_utils.py in the utils directory. These parameters follow the parameters used in the results section in the paper.
 
 # **Results**
 - Results on different classification models, trained and tested on CIFAR10:  
@@ -59,9 +56,6 @@ get_model() in base_utils.py in the utils directory. These parameters follow the
 
 - ResNet18 on CIFAR10 using different regularization methods:  
 <img src="images/results_table_2.png" alt=""/>
-
-- Image synthesis results using StarGAN_v2 trained on Celeb-A-HQ dataset:  
-<img src="images/face_syn_results.png" alt=""/>  
 
 - Visualization examples using CMD:
   <img src="images/vis_results.png" alt="" height="200"/>  
