@@ -68,7 +68,7 @@ python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
   <img src="images/vis_results.png" alt="" height="200"/>  
 
 # **Visualization Code**
-When CMD parameters are saved in a file, the visualization code is also avialable - 
+The visualization code is also avialable, when CMD parameters are saved in a file - 
 ```sh
 python visualization.py
 ```
