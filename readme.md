@@ -72,8 +72,6 @@ When CMD parameters are saved in a file, the visualization code is also avialabl
 ```sh
 python visualization.py
 ```
-  
-This code visualizes a 2D loss landscape based on CMD parameters that are pre-calculated (using the code above).  
 
 # **Citation**
 If you find our work useful in your research please consider citing our publication:
