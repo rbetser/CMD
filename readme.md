@@ -24,7 +24,7 @@ Additional python libraries:
 - torchvision
 
 
-# **CMD Usage**:
+# **Usage**:
 1) The default example is executed as followed:
 ```sh
 python train_cmd.py
@@ -55,8 +55,8 @@ python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
 **Additional Settings**
 - Training parameters (optimizer type, scheduler type, number of epochs, learning rate, momentum, number of CMD modes, etc.) are hard coded and different per model type. To access these parameters see the function get_model() in base_utils.py in the utils directory. These parameters follow the parameters used in the results section in the paper.  
 - Additional options and details are avialable within the code (bottom of the main file - train_cmd.py).
-
-**Visualization Code**
+  
+**Visualization Code**  
 The visualization code is also avialable, when CMD parameters are saved in a file - 
 ```sh
 python visualization.py
