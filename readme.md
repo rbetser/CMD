@@ -57,11 +57,13 @@ python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
 - Additional options and details are avialable within the code (bottom of the main file - train_cmd.py).
   
 **Visualization Code**  
-The visualization code is also avialable, when CMD parameters are saved in a file - 
+The visualization code is also avialable, when CMD parameters are calculated (using the code above) and saved in a file - 
 ```sh
 python visualization.py
 ```
 
+Input arguments are described in the bottom of the code.
+  
 # **Results**
 - Results on different classification models, trained and tested on CIFAR10:  
 <img src="images/result_table.png" alt=""/>  
