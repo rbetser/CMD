@@ -13,12 +13,18 @@ CMD is a correlation-based training dynamics modeling method which divides the f
 - pytorch 1.13.1
 - CUDA Version 11.6.112
 
-Additional python library:
+Additional python libraries:
 - ordered_set
+- scipy
+- sklearn
+- NumPy
+- os
+- matplotlib
+- argparse
+- torchvision
 
 
-# **Usage**:
-
+# **CMD Usage**:
 1) The default example is executed as followed:
 ```sh
 python train_cmd.py
@@ -61,6 +67,13 @@ python train_cmd.py --p_bfgs True --sgd '' --cmd_PostHoc ''
 - Visualization examples using CMD:
   <img src="images/vis_results.png" alt="" height="200"/>  
 
+# **Visualization Code**
+When CMD parameters are saved in a file, the visualization code is also avialable - 
+```sh
+python visualization.py
+```
+  
+This code visualizes a 2D loss landscape based on CMD parameters that are pre-calculated (using the code above).  
 
 # **Citation**
 If you find our work useful in your research please consider citing our publication:
